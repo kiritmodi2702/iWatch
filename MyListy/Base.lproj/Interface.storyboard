@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Friends-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Friends" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MyListy" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="BBr-s5-2DZ">
+                            <items>
+                                <tableRow identifier="FriendTableCell" id="wLy-3d-gbW" customClass="FriendTableCell" customModule="MyListy_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="6B1-6X-5sn">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="Label" numberOfLines="0" id="r1R-pU-MZA">
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="18"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="labelFriendName" destination="r1R-pU-MZA" id="YHi-9x-nrO"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="tableVwFriends" destination="BBr-s5-2DZ" id="Wfs-5q-MA3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="263" y="209"/>
+        </scene>
+    </scenes>
+</document>
